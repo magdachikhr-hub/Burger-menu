@@ -53,10 +53,7 @@ header {
   }
   div.navigation:hover nav {
     display: flex;
-  }
-  div.navigation:hover {
-    scale: 1.2;
-    transition-duration: 400ms;
+    animation: identifer 1s ease-in;
   }
 }
 
@@ -69,4 +66,64 @@ div.message {
   position: fixed;
   right: 10px;
   bottom: 50px;
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div.message:hover {
+  animation: rotate 12s ease infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+svg.bitcoin:hover {
+  animation: rotate 2s ease infinite;
+}
+
+div.box {
+  cursor: pointer;
+  border: 1px solid #e7ebf4;
+  width: 200px;
+  height: 110px;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  img {
+    width: 45px;
+    height: 40px;
+  }
+  span {
+    width: 120px;
+    font-size: 21px;
+  }
+}
+div.box:hover {
+  border: 1px solid #ff334c;
 }
