@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 2000px;
+}
+
 header {
   height: 100px;
   background-color: rgb(25, 25, 208);
@@ -11,6 +15,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  position: sticky;
+  top: 0;
   svg.store {
     height: 50px;
     width: 50px;
@@ -52,4 +58,15 @@ header {
     scale: 1.2;
     transition-duration: 400ms;
   }
+}
+
+div.message {
+  width: 60px;
+  height: 60px;
+  background-color: blueviolet;
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
 }
